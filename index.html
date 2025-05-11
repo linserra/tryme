@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Me - Home Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            box-sizing: border-box;
+        }
+
+        body{
+            max-width: 2560px;
+            margin: 0 auto;
+        }
+
+        .banner-part{
+            width: 100%;
+            height: 650px;
+            background-image: url(img/Recurso\ 1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .icon-responsive{
+            display: none;
+        }
+
+        .menu-desplegable{
+            display: none;
+        }
+
+        #navigation{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1700px;
+            margin: 0 auto;
+            padding: 5px 0px;
+            padding-top: 10px;
+            margin-bottom: 50px;
+        }
+
+        .carrito{
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .navButtons{
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        
+        .navLink{
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            font-style: italic;
+            text-decoration: none;
+            font-size: 25px;
+            transition: all 0.3s ease-in-out;
+        }
+        .navLink:hover{
+            text-decoration: underline;
+        }
+
+        
+        
+
+        .banner-title-home{
+            max-width: 1700px;
+            margin: 0 auto;
+        }
+
+        .banner-title-home h1{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 100px;
+            color: white;
+            margin-bottom: 5px;
+        }
+        .banner-title-home h2{
+            font-family: "Montserrat", sans-serif;
+            font-weight: bolder;
+            font-style: normal;
+            font-size: 100px;
+            color: white;
+            margin-bottom: 30px;
+        }
+        .banner-title-home p{
+            font-family: "Montserrat", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 60px;
+        }
+
+        .banner-button{
+            display: block;
+            width: fit-content;
+            background-color: white;
+            padding: 15px 25px;
+            border-radius: 20px;
+            font-family: "Montserrat", sans-serif;
+            color: #465753;
+            font-weight: bolder;
+            font-style: normal;
+            text-align: center;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .banner-button:hover{
+            background-color: rgb(232, 222, 222); 
+        }
+
+        @media screen and (max-width: 1740px) {
+            .banner-part{
+                padding: 0px 45px;
+            }
+        }
+
+        @media screen and (max-width: 850px) {
+
+            .banner-part{
+                height: 450px;
+            }
+
+            .banner-title-home h1{
+                font-size: 50px;
+            }
+            .banner-title-home h2{
+                font-size: 50px;
+            }
+            .banner-title-home p{
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media screen and (max-width: 800px){
+            .navButtons{
+                display: none;
+            }
+
+            .banner-part{
+                height: 550px;
+            }
+
+            .icon-responsive{
+                display: flex;
+                justify-content: center;
+            }
+
+            .logo-escritorio{
+                display: none;
+            }
+
+            .menu-desplegable{
+                display: flex;
+                align-items: center;
+                width: 60px;
+                cursor: pointer;
+            }
+
+            .menu-desplegable img{
+                width: 60px;
+            }
+
+            
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="banner-part">
+        <div class="icon-responsive">
+            <a href="index.html" class="logo">
+                <img src="img/Try Me_logo.png" alt="Try Me logo">
+            </a>
+        </div>
+        <nav id="navigation">
+            <div class="menu-desplegable">
+                <img src="img/menuDesplegable.png" alt="menu desplegable">
+            </div>
+            <a href="index.html" class="logo logo-escritorio">
+                <img src="img/Try Me_logo.png" alt="Try Me logo">
+            </a>
+            
+            <div class="navButtons">
+                <a href="index.html" class="navLink">Home</a>
+                <a href="paginas/gift Card.html" class="navLink">Gift Card</a>
+                <a href="paginas/invierno 2025.html" class="navLink">Invierno 2025</a>
+            </div>
+            <div class="carrito">
+                <img src="img/carrito.png" alt="carrito" class="carrito">
+            </div>
+            
+            
+        </nav>
+        <div class="banner-title-home">
+            <h1>Otoño/Invierno</h1>
+            <h2>2025</h2>
+            <p>Frase punchline</p>
+            <a href="" class="banner-button">VER MÁS</a>
+        </div>
+    </section>
+    <main>
+        <div class="discount">
+            <div class="discount-text">
+                <p>10% de descuento en local</p>
+                <p>3 cuotas sin interés</p>
+                <p>Tarjetas debito y credito</p>
+            </div>
+        </div>
+        <section class="content-block">
+            <div class="nav-productos">
+                <span class="nav-item active" onclick="showCategory('new-arrivals')">Todas las prendas</span>
+                <span class="nav-item" onclick="showCategory('vestido')">Vestido</span>
+                <span class="nav-item" onclick="showCategory('pantalon')">Pantalón</span>
+                <span class="nav-item" onclick="showCategory('remera')">Remera</span>
+                <span class="nav-item" onclick="showCategory('saco')">Saco</span>
+            </div>
+            <div id="new-arrivals" class="content active">
+                <div class="slider-wrapper">
+                    <div class="slider-buttons">
+                        <button class="slider-button" onclick="scrollSlider('left')">&#8249;</button>
+                        <button class="slider-button" onclick="scrollSlider('right')">&#8250;</button>
+                    </div>
+                    <div class="contenedor-productos" id="productoSlider">
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div id="vestido" class="content">
+                <div class="slider-wrapper">
+                    <div class="slider-buttons">
+                        <button class="slider-button" onclick="scrollSlider2('left')">&#8249;</button>
+                        <button class="slider-button" onclick="scrollSlider2('right')">&#8250;</button>
+                    </div>
+                    <div class="contenedor-productos" id="productoSlider2">
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Vestido Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Vestido Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Vestido Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Vestido Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Vestido Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Vestido Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Vestido Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="pantalon" class="content">
+                <div class="slider-wrapper">
+                    <div class="slider-buttons">
+                        <button class="slider-button" onclick="scrollSlider3('left')">&#8249;</button>
+                        <button class="slider-button" onclick="scrollSlider3('right')">&#8250;</button>
+                    </div>
+                    <div class="contenedor-productos" id="productoSlider3">
+                        <div class="producto">
+                            <img src="img/Pantalones/Pantalon.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Pantalon Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Pantalones/Pantalon.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Pantalon Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Pantalones/Pantalon.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Pantalon Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Pantalones/Pantalon.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Pantalon Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Pantalones/Pantalon.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Pantalon Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Pantalones/Pantalon.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Pantalon Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="remera" class="content">
+                <div class="slider-wrapper">
+                    <div class="slider-buttons">
+                        <button class="slider-button" onclick="scrollSlider4('left')">&#8249;</button>
+                        <button class="slider-button" onclick="scrollSlider4('right')">&#8250;</button>
+                    </div>
+                    <div class="contenedor-productos" id="productoSlider4">
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="saco" class="content">
+                <div class="slider-wrapper">
+                    <div class="slider-buttons">
+                        <button class="slider-button" onclick="scrollSlider5('left')">&#8249;</button>
+                        <button class="slider-button" onclick="scrollSlider5('right')">&#8250;</button>
+                    </div>
+                    <div class="contenedor-productos" id="productoSlider5">
+                        <div class="producto">
+                            <img src="img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+
+                        <div class="producto">
+                            <img src="img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <section class="productos-descuento">
+            <h3 class="titulo-descuento">Descuentos!</h3>
+            <div class="contenedor-descuentos">
+                <div class="slider-wrapper">
+                    <div class="slider-buttons">
+                        <button class="slider-button" onclick="scrollSlider6('left')">&#8249;</button>
+                        <button class="slider-button" onclick="scrollSlider6('right')">&#8250;</button>
+                    </div>
+                    <div class="contenedor-productos" id="productoSlider6">
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="redes-sociales">
+                        <a href="#" target="_blank"><img src="img/instagram.png" alt="instagram" class="img-footer"></a>
+                        <a href="#" target="_blank"><img src="img/facebook.png" alt="facebook" class="img-footer"></a>
+                    </div>
+                    <p>+54 9 1169781301</p>
+                    <p>4513-1104</p>
+                    <p>ventasweb@try-me.com.ar</p>
+                    <p>Alsina 3350 - CP 1603 - Villa Martelli</p>
+                </div>
+                <div class="footer-right">
+                    <p>Medios de Pago</p>
+                    <div class="pago-imagenes">
+                        <div class="box-tarjeta"><img src="img/visa.png" alt="Visa" class="img-tarjeta"></div>
+                        <div class="box-tarjeta"><img src="img/mastercard.png" alt="Mastercard" class="img-tarjeta"></div>
+                        <div class="box-tarjeta"><img src="img/visa_debito.png" alt="Visa Debito" class="img-tarjeta"></div>
+                        <div class="box-tarjeta"><img src="img/mastercard_maestro.png" alt="Mastercard Maestro" class="img-tarjeta"></div>
+                        <div class="box-tarjeta"><img src="img/American express.png" alt="American Express" class="img-tarjeta"></div>
+                    </div>
+                    <img src="img/dataFiscal.jpg" alt="Data Fiscal" class="data-fiscal">
+                </div>
+            </div>
+           
+        </footer>
+
+    </main>
+
+    <script>
+        function showCategory(category) {
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+            document.querySelector(`[onclick="showCategory('${category}')"]`).classList.add('active');
+            
+            document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+            document.getElementById(category).classList.add('active');
+        }
+
+        function scrollSlider(direction) {
+            const slider = document.getElementById('productoSlider');
+            const scrollAmount = 320; // Ajustalo según el ancho de los productos
+
+            if (direction === 'left') {
+                slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+
+        function scrollSlider2(direction2) {
+            const slider2 = document.getElementById('productoSlider2');
+            const scrollAmount2 = 320; // Ajustalo según el ancho de los productos
+
+            if (direction2 === 'left') {
+                slider2.scrollBy({ left: -scrollAmount2, behavior: 'smooth' });
+            } else {
+                slider2.scrollBy({ left: scrollAmount2, behavior: 'smooth' });
+            }
+        }
+
+        function scrollSlider3(direction3) {
+            const slider3 = document.getElementById('productoSlider3');
+            const scrollAmount3 = 320; // Ajustalo según el ancho de los productos
+
+            if (direction3 === 'left') {
+                slider3.scrollBy({ left: -scrollAmount3, behavior: 'smooth' });
+            } else {
+                slider3.scrollBy({ left: scrollAmount3, behavior: 'smooth' });
+            }
+        }
+
+        function scrollSlider4(direction4) {
+            const slider4 = document.getElementById('productoSlider4');
+            const scrollAmount4 = 320; // Ajustalo según el ancho de los productos
+
+            if (direction4 === 'left') {
+                slider4.scrollBy({ left: -scrollAmount4, behavior: 'smooth' });
+            } else {
+                slider4.scrollBy({ left: scrollAmount4, behavior: 'smooth' });
+            }
+        }
+
+        function scrollSlider5(direction5) {
+            const slider5 = document.getElementById('productoSlider5');
+            const scrollAmount5 = 320; // Ajustalo según el ancho de los productos
+
+            if (direction5 === 'left') {
+                slider5.scrollBy({ left: -scrollAmount5, behavior: 'smooth' });
+            } else {
+                slider5.scrollBy({ left: scrollAmount5, behavior: 'smooth' });
+            }
+        }
+
+        function scrollSlider6(direction6) {
+            const slider6 = document.getElementById('productoSlider6');
+            const scrollAmount6 = 320; // Ajustalo según el ancho de los productos
+
+            if (direction6 === 'left') {
+                slider6.scrollBy({ left: -scrollAmount6, behavior: 'smooth' });
+            } else {
+                slider6.scrollBy({ left: scrollAmount6, behavior: 'smooth' });
+            }
+        }
+
+        
+
+    </script>
+</body>
+</html>

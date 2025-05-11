@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Me - Invierno 2025</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            box-sizing: border-box;
+        }
+
+        body{
+            max-width: 2560px;
+            margin: 0 auto;
+        }
+
+
+        .icon-responsive{
+            display: none;
+        }
+
+        .menu-desplegable{
+            display: none;
+        }
+
+        #navigation{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1700px;
+            margin: 0 auto;
+            padding: 5px 0px;
+            padding-top: 10px;
+        }
+
+        .carrito{
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .navButtons{
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        
+        .navLink{
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            font-style: italic;
+            text-decoration: none;
+            font-size: 25px;
+            transition: all 0.3s ease-in-out;
+        }
+        .navLink:hover{
+            text-decoration: underline;
+        }
+
+        .nav-container{
+            background-color: #465753;
+        }
+
+        .gift-card{
+            padding: 110px 0px;
+            max-width: 1700px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .gift-card h1{
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        .gift-card p{
+            font-family: "Montserrat", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .buttons-giftcard{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .button-gift{
+            background-color: #465753;
+            border: none;
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bolder;
+            font-style: normal;
+            text-align: center;
+            text-decoration: none;
+            font-size: 24px;
+            margin-bottom: 20px;
+            width: 500px;
+            cursor: pointer;
+        }
+        .button-gift:hover{
+            background-color: #5a6865;
+        }
+
+        .img-giftcard{
+            position: absolute;
+            width: 42%;
+            top: 0px;
+            right: 0px;
+        }
+
+        main{
+            position: relative;
+        }
+
+
+
+        
+
+        @media screen and (max-width: 1740px) {
+            .banner-part{
+                padding: 0px 45px;
+            }
+            .gift-card{
+                padding: 110px 45px;
+                overflow: hidden;
+            }
+
+            #navigation{
+                padding: 5px 45px;
+            }
+
+
+            
+        }
+
+        @media screen and (max-width: 800px){
+            .navButtons{
+                display: none;
+            }
+
+            .banner-part{
+                height: 550px;
+            }
+
+            .icon-responsive{
+                display: flex;
+                justify-content: center;
+            }
+
+            .logo-escritorio{
+                display: none;
+            }
+
+            .menu-desplegable{
+                display: flex;
+                align-items: center;
+                width: 60px;
+                cursor: pointer;
+            }
+
+            .menu-desplegable img{
+                width: 60px;
+            }
+
+            .buttons-giftcard{
+                width: 100%;
+            }
+
+            .gift-card{
+                padding: 50px 45px;
+            }
+
+            .img-giftcard{
+                right: -60px;
+            }
+
+            .gift-card h1{
+                font-size: 30px;
+            }
+            .gift-card p{
+                font-size: 16px;
+                margin-bottom: 40px;
+            }
+
+            .buttons-giftcard{
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+            }
+
+            .button-gift{
+                width: 100%;
+            }
+
+            
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section class="nav-container">
+        <div class="icon-responsive">
+            <a href="../index.html" class="logo">
+                <img src="../img/Try Me_logo.png" alt="Try Me logo">
+            </a>
+        </div>
+        <nav id="navigation">
+            <div class="menu-desplegable">
+                <img src="../img/menuDesplegable.png" alt="menu desplegable">
+            </div>
+            <a href="../index.html" class="logo logo-escritorio">
+                <img src="../img/Try Me_logo.png" alt="Try Me logo">
+            </a>
+            
+            <div class="navButtons">
+                <a href="../index.html" class="navLink">Home</a>
+                <a href="gift Card.html" class="navLink">Gift Card</a>
+                <a href="invierno 2025.html" class="navLink">Invierno 2025</a>
+            </div>
+            <div class="carrito">
+                <img src="../img/carrito.png" alt="carrito" class="carrito">
+            </div>
+            
+            
+        </nav>
+    </section>
+    <main>
+        <section class="invierno-main">
+            <h1>GIFT Card</h1>
+            <p>Descripcion</p>
+            <div class="invierno-flex">
+                <div class="invierno-left">
+                    <h3 class="titulo-invierno absolute">Filtrar por</h3>
+                    <h4>Precio</h4>
+                    <input type="text" name="Minimo" id="minimo" placeholder="  Mínimo">
+                    <input style="margin-bottom: 30px;" type="text" name="Maximo" id="maximo" placeholder="  Máximo">
+                    <h4>Categoría</h4>
+                    <span class="categoria">Vestido (15)</span>
+                    <span class="categoria">Pantalón (4)</span>
+                    <span class="categoria">Remera(14)</span>
+                    <span class="categoria">Saco (3)</span>
+                </div>
+                <div class="invierno-right">
+                    <div class="invierno-wrapper">
+                        <div class="producto">
+                            <img src="../img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="../img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="../img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Vestido Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="../img/Pantalones/Pantalon.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Pantalon Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="../img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="../img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="../img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Vestido Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="../img/Pantalones/Pantalon.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Pantalon Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="../img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Remera Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="../img/Sacos/saco.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Saco Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="../img/Remeras/remera_simple.png" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Vestido Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                        <div class="producto">
+                            <img src="../img/Pantalones/Pantalon.jpg" alt="Remera simple" class="imagen-producto">
+                            <h3 class="titulo-producto">Pantalon Simple</h3>
+                            <p class="producto-precio">$57,469</p>
+                            <a href="" class="producto-boton">COMPRAR</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <div class="discount inner-pages">
+            <div class="discount-text">
+                <p>10% de descuento en local</p>
+                <p>3 cuotas sin interés</p>
+                <p>Tarjetas debito y credito</p>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="redes-sociales">
+                        <a href="#" target="_blank"><img src="../img/instagram.png" alt="instagram" class="img-footer"></a>
+                        <a href="#" target="_blank"><img src="../img/facebook.png" alt="facebook" class="img-footer"></a>
+                    </div>
+                    <p>+54 9 1169781301</p>
+                    <p>4513-1104</p>
+                    <p>ventasweb@try-me.com.ar</p>
+                    <p>Alsina 3350 - CP 1603 - Villa Martelli</p>
+                </div>
+                <div class="footer-right">
+                    <p>Medios de Pago</p>
+                    <div class="pago-imagenes">
+                        <div class="box-tarjeta"><img src="../img/visa.png" alt="Visa" class="img-tarjeta"></div>
+                        <div class="box-tarjeta"><img src="../img/mastercard.png" alt="Mastercard" class="img-tarjeta"></div>
+                        <div class="box-tarjeta"><img src="../img/visa_debito.png" alt="Visa Debito" class="img-tarjeta"></div>
+                        <div class="box-tarjeta"><img src="../img/mastercard_maestro.png" alt="Mastercard Maestro" class="img-tarjeta"></div>
+                        <div class="box-tarjeta"><img src="../img/American express.png" alt="American Express" class="img-tarjeta"></div>
+                    </div>
+                    <img src="../img/dataFiscal.jpg" alt="Data Fiscal" class="data-fiscal">
+                </div>
+            </div>
+           
+        </footer>
+
+    </main>
+
+    <script>
+        function showCategory(category) {
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+            document.querySelector(`[onclick="showCategory('${category}')"]`).classList.add('active');
+            
+            document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+            document.getElementById(category).classList.add('active');
+        }
+
+        function scrollSlider(direction) {
+            const slider = document.getElementById('productoSlider');
+            const scrollAmount = 320; // Ajustalo según el ancho de los productos
+
+            if (direction === 'left') {
+                slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+
+        function scrollSlider2(direction2) {
+            const slider2 = document.getElementById('productoSlider2');
+            const scrollAmount2 = 320; // Ajustalo según el ancho de los productos
+
+            if (direction2 === 'left') {
+                slider2.scrollBy({ left: -scrollAmount2, behavior: 'smooth' });
+            } else {
+                slider2.scrollBy({ left: scrollAmount2, behavior: 'smooth' });
+            }
+        }
+
+        function scrollSlider3(direction3) {
+            const slider3 = document.getElementById('productoSlider3');
+            const scrollAmount3 = 320; // Ajustalo según el ancho de los productos
+
+            if (direction3 === 'left') {
+                slider3.scrollBy({ left: -scrollAmount3, behavior: 'smooth' });
+            } else {
+                slider3.scrollBy({ left: scrollAmount3, behavior: 'smooth' });
+            }
+        }
+
+        function scrollSlider4(direction4) {
+            const slider4 = document.getElementById('productoSlider4');
+            const scrollAmount4 = 320; // Ajustalo según el ancho de los productos
+
+            if (direction4 === 'left') {
+                slider4.scrollBy({ left: -scrollAmount4, behavior: 'smooth' });
+            } else {
+                slider4.scrollBy({ left: scrollAmount4, behavior: 'smooth' });
+            }
+        }
+
+        function scrollSlider5(direction5) {
+            const slider5 = document.getElementById('productoSlider5');
+            const scrollAmount5 = 320; // Ajustalo según el ancho de los productos
+
+            if (direction5 === 'left') {
+                slider5.scrollBy({ left: -scrollAmount5, behavior: 'smooth' });
+            } else {
+                slider5.scrollBy({ left: scrollAmount5, behavior: 'smooth' });
+            }
+        }
+
+        function scrollSlider6(direction6) {
+            const slider6 = document.getElementById('productoSlider6');
+            const scrollAmount6 = 320; // Ajustalo según el ancho de los productos
+
+            if (direction6 === 'left') {
+                slider6.scrollBy({ left: -scrollAmount6, behavior: 'smooth' });
+            } else {
+                slider6.scrollBy({ left: scrollAmount6, behavior: 'smooth' });
+            }
+        }
+
+        
+
+    </script>
+</body>
+</html>
